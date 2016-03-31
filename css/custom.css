@@ -1,10 +1,19 @@
 /* This is a custom CSS stylesheet */
 *{
   font-family: "Century Gothic", sans-serif;
+   box-sizing: border-box;
 }
 body { 
   padding-top: 50px; 
 }
+/*logo */
+.logo {
+  width: 100%;
+}
+.logo img{
+  width: 1140px;
+}
+
 .carousel {
   width: 100%;
 }
@@ -62,7 +71,7 @@ section {
 }
 
 /* media query fix for navbar collapse */
-@media (max-width: 992px){
+@media only screen and (max-width: 992px){
   .navbar-header{
     float:none;
   }
@@ -97,4 +106,44 @@ section {
     .collapse.in{
         display:block !important;
     }
+}
+/* Modal */
+button{
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/*Events */
+#slider{
+  position: relative;
+  width: 400px;
+  height: 500px;
+}
+
+ #slider img {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+ }
+
+/*media query logo fix */
+
+@media only screen and (max-width: 1194px){
+  .logo img{
+    width: 940px;
+  }
+}
+@media only screen and (max-width: 994px){
+  .logo img{
+    width: 720px;
+  }
+}
+@media only screen and (max-width: 756px){
+  .logo img{
+    width: 100%;
+  }
 }
